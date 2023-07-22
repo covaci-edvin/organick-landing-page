@@ -1,0 +1,42 @@
+.offers {
+  margin: 9.6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.1rem;
+}
+
+.offer {
+  width: 100%;
+  background-size: cover;
+  border-radius: 3.2rem;
+  background-position: center;
+  cursor: pointer;
+//   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1)
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.3rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.1rem);
+  }
+
+  &--1 {
+    background-image: url("../../img/desktop/offer-1-2x.jpg");
+    color: $color-white;
+  }
+
+  &--2 {
+    background-image: url("../../img/desktop/offer-2-2x.jpg");
+    color: $color-body;
+  }
+
+  &__content {
+    // height: 16rem;
+    width: 26rem;
+    margin: 10.8rem 5.6rem;
+  }
+}
