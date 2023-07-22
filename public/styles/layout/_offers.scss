@@ -11,27 +11,39 @@
   border-radius: 3.2rem;
   background-position: center;
   cursor: pointer;
-//   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1)
+  //   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1)
   transition: all 0.2s;
 
-  &:hover {
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-    transform: translateY(-0.3rem);
-  }
-
-  &:active {
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-    transform: translateY(-0.1rem);
-  }
-
   &--1 {
+    $color-shadow: rgba(246, 100, 139, 0.6);
     background-image: url("../../img/desktop/offer-1-2x.jpg");
     color: $color-white;
+
+    &:hover {
+      box-shadow: 0 0.5rem 3rem $color-shadow;
+      transform: translateY(-0.3rem);
+    }
+
+    &:active {
+      box-shadow: 0 0.1rem 1rem $color-shadow;
+      transform: translateY(-0.1rem);
+    }
   }
 
   &--2 {
+    $color-shadow: rgba(246, 169, 50, 0.6);
     background-image: url("../../img/desktop/offer-2-2x.jpg");
     color: $color-body;
+
+    &:hover {
+      box-shadow: 0 0.5rem 3rem $color-shadow;
+      transform: translateY(-0.3rem);
+    }
+
+    &:active {
+      box-shadow: 0 0.1rem 1rem $color-shadow;
+      transform: translateY(-0.1rem);
+    }
   }
 
   &__content {
