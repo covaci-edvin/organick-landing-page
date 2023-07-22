@@ -1,0 +1,68 @@
+.about {
+  background-color: $color-grey-light-1;
+  padding: 8rem 4rem;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.1rem;
+  }
+
+  &__img {
+    object-fit: contain;
+    width: calc(50% - (3.1rem / 2));
+    // flex: 0 0 50%;
+  }
+
+  &__info {
+    color: $color-body;
+  }
+
+  &__display-text {
+    color: $color-primary;
+  }
+
+  &__heading {
+    margin-bottom: 2.4rem;
+  }
+
+  &__benefits {
+    margin: 5.6rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__benefit {
+    display: flex;
+    gap: 2rem;
+
+    &__icon-container {
+      background-color: $color-white;
+      border-radius: 2rem;
+      height: 9.6rem;
+      width: 9.6rem;
+    }
+  }
+}
+
+.benefit {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+
+  &__icon-container {
+    background-color: $color-white;
+    border-radius: 2rem;
+    height: 9.6rem;
+    width: 9.6rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+}
