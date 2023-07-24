@@ -1,0 +1,34 @@
+.offers {
+  margin: 9.6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.1rem;
+}
+
+.offer {
+  width: 100%;
+  background-size: cover;
+  border-radius: 3.2rem;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &--1 {
+    $color-shadow: rgba(246, 100, 139, 0.6);
+    background-image: url("../../img/images/offer-1-2x.jpg");
+    color: $color-white;
+    @include offer-hover($color-shadow);
+  }
+
+  &--2 {
+    $color-shadow: rgba(246, 169, 50, 0.6);
+    background-image: url("../../img/images/offer-2-2x.jpg");
+    color: $color-body;
+    @include offer-hover($color-shadow);
+  }
+
+  &__content {
+    width: 26rem;
+    margin: 10.8rem 5.6rem;
+  }
+}
