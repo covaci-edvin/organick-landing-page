@@ -31,18 +31,6 @@
     flex-direction: column;
     gap: 2.4rem;
   }
-
-  &__benefit {
-    display: flex;
-    gap: 2rem;
-
-    &__icon-container {
-      background-color: $color-white;
-      border-radius: 2rem;
-      height: 9.6rem;
-      width: 9.6rem;
-    }
-  }
 }
 
 .benefit {
