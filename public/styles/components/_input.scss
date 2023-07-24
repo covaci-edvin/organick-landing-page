@@ -1,0 +1,17 @@
+.input {
+  @extend .body-text-1;
+  color: $color-grey-dark-2;
+  padding: 2.4rem 4.8rem;
+  border: none;
+  width: 40.7rem;
+  border-radius: 1.6rem;
+  transition: outline 0.2s;
+
+  &:focus {
+    outline: 2px solid $color-secondary;
+  }
+
+  &:focus:valid {
+    outline: 2px solid $color-primary;
+  }
+}
