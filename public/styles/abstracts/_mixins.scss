@@ -3,3 +3,16 @@
     @content;
   }
 }
+
+@mixin offer-hover ($color){
+
+  &:hover {
+    box-shadow: 0 0.5rem 3rem $color;
+    transform: translateY(-0.3rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.1rem 1rem $color;
+    transform: translateY(-0.1rem);
+  }
+}
