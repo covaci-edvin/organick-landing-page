@@ -1,7 +1,5 @@
-@mixin respond($bearkpoint) {
-  @if $bearkpoint == mobile {
-    @media only screen and (max-width: 64em) {
-      @content;
-    }
+@mixin for-mobile-only {
+  @media only screen and (max-width: 64em) {
+    @content;
   }
 }
