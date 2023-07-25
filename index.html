@@ -3,26 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
+      rel="preload"
+      as="style"
+      crossorigin
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
 
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/yellowtail/v18/OZpGg_pnoDtINPfRIlLohlvHwWL9f4k.woff2"
+      as="font"
+      crossorigin
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      crossorigin
+      href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      crossorigin
+      href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2"
+      as="font"
+      type="font/woff2"
+    />
+
+    <link rel="preload" type="image/svg+xml" href="/svgs/logo.svg" as="image" />
+    <link
+      rel="preload"
+      type="image/jpg"
+      href="/images/hero-bg-2x.jpg"
+      as="image"
+    />
+
     <link rel="icon" type="image/svg+xml" href="/svgs/organick.svg" />
-    <!-- <link rel="stylesheet" href="/public/styles/main.scss" /> -->
+    <link rel="stylesheet" href="/public/styles/main.scss" />
 
     <title>Organick</title>
   </head>
   <body>
     <header class="header">
-      <img
-        src="/svgs/logo.svg"
-        alt="Organick header logo"
-        class="header__logo"
-      />
+      <div class="header__logo-box">
+        <img
+          src="/svgs/logo.svg"
+          alt="Organick header logo"
+          class="header__logo"
+        />
+      </div>
       <ul class="menu">
         <li class="menu__item">
           <a href="#" class="menu__link">Home</a>
@@ -76,6 +114,7 @@
             src="/images/about-2x.png"
             alt="fresh citrus fruits"
             class="about__img"
+            loading="lazy"
           />
           <div class="about__info">
             <p class="display-text about__display-text">About Us</p>
@@ -138,6 +177,7 @@
               src="/images/product-1-1x.jpg"
               alt="brocolli, product one"
               class="product__img"
+              loading="lazy"
             />
             <p class="subtitle-1 product__name">Calabrese Broccoli</p>
             <div class="product__info">
@@ -172,6 +212,7 @@
               src="/images/product-2-1x.jpg"
               alt="brocolli, product one"
               class="product__img"
+              loading="lazy"
             />
             <p class="subtitle-1 product__name">Fresh Corn</p>
             <div class="product__info">
@@ -200,6 +241,7 @@
               src="/images/product-3-1x.jpg"
               alt="brocolli, product one"
               class="product__img"
+              loading="lazy"
             />
             <p class="subtitle-1 product__name">Dried Pistachio</p>
             <div class="product__info">
@@ -231,6 +273,7 @@
               src="/images/product-4-1x.jpg"
               alt="brocolli, product one"
               class="product__img"
+              loading="lazy"
             />
             <p class="subtitle-1 product__name">Vegan Red Tomato</p>
             <div class="product__info">
@@ -260,6 +303,7 @@
               src="/images/product-5-1x.jpg"
               alt="brocolli, product one"
               class="product__img"
+              loading="lazy"
             />
             <p class="subtitle-1 product__name">Organic Almonds</p>
             <div class="product__info">
@@ -285,6 +329,7 @@
               src="/images/product-6-1x.jpg"
               alt="brocolli, product one"
               class="product__img"
+              loading="lazy"
             />
             <p class="subtitle-1 product__name">Brown Hazelnut</p>
             <div class="product__info">
@@ -314,6 +359,7 @@
           src="/images/story-left-2x.jpg"
           alt="natural products as background image"
           class="testimonials__bg-img--left"
+          loading="lazy"
         />
         <div class="testimonial">
           <p class="display-text testimonial__display-text">Testimonial</p>
@@ -324,6 +370,7 @@
             src="/images/sara-avatar.jpg"
             alt="Sara Taylor, Organick customer"
             class="testimonial__avatar"
+            loading="lazy"
           />
           <div class="testimonial__rating">
             <svg class="testimonial__rating-icon">
@@ -354,9 +401,10 @@
           src="/images/story-right-2x.jpg"
           alt="natural products as background image"
           class="testimonials__bg-img--right"
+          loading="lazy"
         />
       </section>
     </main>
-    <script type="module" src="./main.js"></script>
+    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
