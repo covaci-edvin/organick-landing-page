@@ -1,0 +1,54 @@
+.product {
+  background-color: $color-grey-light-1;
+  border-radius: 3.2rem;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    align-self: flex-start;
+  }
+
+  &__img {
+    max-width: 36.8rem;
+  }
+
+  &__name {
+    padding: 1.6rem 0;
+    margin-bottom: 1.6rem;
+    color: $color-body;
+    border-bottom: 1px solid $color-grey-dark-1;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    &--old {
+      text-decoration: line-through;
+      color: $color-grey-dark-1;
+    }
+
+    &--new {
+      color: $color-body;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  &__rating-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}
