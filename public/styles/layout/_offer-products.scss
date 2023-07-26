@@ -1,0 +1,25 @@
+.offer-products {
+  background-color: $color-body;
+  padding: 8rem 4rem;
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__display-text {
+    color: $color-primary;
+  }
+
+  &__heading {
+    color: $color-white;
+    line-height: normal;
+  }
+}
