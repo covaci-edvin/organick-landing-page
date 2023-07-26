@@ -1,0 +1,45 @@
+.offer-card {
+  width: 43.2rem;
+  height: 58.4rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5.6rem 0;
+  }
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(1, 1, 1, 0.74),
+      transparent 50%
+    );
+  }
+
+  &__label {
+    background-color: $color-white;
+    color: $color-body;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32rem;
+    height: 9.6rem;
+    border-radius: 2.4rem;
+    z-index: 2;
+  }
+}
