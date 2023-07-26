@@ -53,63 +53,69 @@
     <title>Organick</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo-box">
-        <img
-          src="/svgs/logo.svg"
-          alt="Organick header logo"
-          class="header__logo"
-        />
+    <header class="header-section">
+      <div class="header section-content">
+        <div class="header__logo-box">
+          <img
+            src="/svgs/logo.svg"
+            alt="Organick header logo"
+            class="header__logo"
+          />
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">About us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Shop</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Pages</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact us</a>
+          </li>
+        </ul>
       </div>
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="#" class="menu__link">Home</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">About us</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Shop</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Pages</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Contact us</a>
-        </li>
-      </ul>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero__content">
-          <p class="display-text hero__display-text">Made with nature</p>
-          <h1 class="heading-1 hero__heading">
-            Welcome to the world of nature and organic.
-          </h1>
-          <a href="#" class="btn btn--primary hero__btn">
-            <span class="btn__text">Explore now</span>
-            <svg class="btn__icon">
-              <use xlink:href="../svgs/sprite.svg#Arrow" />
-            </svg>
-          </a>
-        </div>
-      </section>
-      <section class="offers">
-        <div class="offer offer--1">
-          <div class="offer__content">
-            <p class="display-text offer__display-text">Natural!!</p>
-            <h3 class="heading-3 offer__heading">Get Garden Fresh Fruits</h3>
-          </div>
-        </div>
-        <div class="offer offer--2">
-          <div class="offer__content">
-            <p class="display-text">Offer!!</p>
-            <h3 class="heading-3">Get 10% off on Vegetables</h3>
+      <section class="hero-section">
+        <div class="hero section-content">
+          <div class="hero__content">
+            <p class="display-text hero__display-text">Made with nature</p>
+            <h1 class="heading-1 hero__heading">
+              Welcome to the world of nature and organic.
+            </h1>
+            <a href="#" class="btn btn--primary hero__btn">
+              <span class="btn__text">Explore now</span>
+              <svg class="btn__icon">
+                <use xlink:href="../svgs/sprite.svg#Arrow" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="about__content">
+      <section class="offers-section">
+        <div class="offers-content section-content">
+          <div class="offer offer--1">
+            <div class="offer__content">
+              <p class="display-text offer__display-text">Natural!!</p>
+              <h3 class="heading-3 offer__heading">Get Garden Fresh Fruits</h3>
+            </div>
+          </div>
+          <div class="offer offer--2">
+            <div class="offer__content">
+              <p class="display-text">Offer!!</p>
+              <h3 class="heading-3">Get 10% off on Vegetables</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="about__content section-content">
           <img
             src="/images/about-2x.png"
             alt="fresh citrus fruits"
@@ -167,188 +173,192 @@
           </div>
         </div>
       </section>
-      <section class="products">
-        <p class="display-text products__display-text">Organic</p>
-        <h2 class="heading-2 products__heading">Our Products</h2>
-        <div class="products-container">
-          <div class="product">
-            <div class="label product__label">Vegetable</div>
-            <img
-              src="/images/product-1-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Calabrese Broccoli</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 25.00 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 21.00 USD
+      <section class="products-section">
+        <div class="products__content section-content">
+          <p class="display-text products__display-text">Organic</p>
+          <h2 class="heading-2 products__heading">Our Products</h2>
+          <div class="products-container">
+            <div class="product">
+              <div class="label product__label">Vegetable</div>
+              <img
+                src="/images/product-1-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Calabrese Broccoli</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 25.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 21.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="label product__label">Vegetable</div>
-            <img
-              src="/images/product-2-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Fresh Corn</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 21.23 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 18.00 USD
+            <div class="product">
+              <div class="label product__label">Vegetable</div>
+              <img
+                src="/images/product-2-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Fresh Corn</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 21.23 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 18.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="label product__label">Millets</div>
-            <img
-              src="/images/product-3-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Dried Pistachio</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 61.00 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 48.00 USD
+            <div class="product">
+              <div class="label product__label">Millets</div>
+              <img
+                src="/images/product-3-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Dried Pistachio</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 61.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 48.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="label product__label">Vegetable</div>
-            <img
-              src="/images/product-4-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Vegan Red Tomato</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 14.00 USD</div>
-                <div class="body-text-bold product__price--new">$ 9.37 USD</div>
-              </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="label product__label">Fruits</div>
-            <img
-              src="/images/product-5-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Organic Almonds</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 21.00 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 18.00 USD
+            <div class="product">
+              <div class="label product__label">Vegetable</div>
+              <img
+                src="/images/product-4-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Vegan Red Tomato</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 14.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 9.37 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="label product__label">Millets</div>
-            <img
-              src="/images/product-6-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Brown Hazelnut</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 43.00 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 34.00 USD
+            <div class="product">
+              <div class="label product__label">Fruits</div>
+              <img
+                src="/images/product-5-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Organic Almonds</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 21.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 18.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
+            </div>
+            <div class="product">
+              <div class="label product__label">Millets</div>
+              <img
+                src="/images/product-6-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Brown Hazelnut</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 43.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 34.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -361,7 +371,7 @@
           class="testimonials__bg-img--left"
           loading="lazy"
         />
-        <div class="testimonial">
+        <div class="testimonial section-content">
           <p class="display-text testimonial__display-text">Testimonial</p>
           <h2 class="heading-2 testimonial__heading">
             What Our Custumer Saying?
@@ -404,221 +414,193 @@
           loading="lazy"
         />
       </section>
-      <section class="eco-friendly">
-        <img
-          src="./public/images/eco-friendly-2x.jpg"
-          alt="natural field"
-          loading="lazy"
-          class="eco-friendly__img"
-        />
-        <div class="eco-friendly__card">
-          <p class="display-text eco-friendly__display-text">Eco friendly</p>
-          <h2 class="heading-2">From our Farm to your Home</h2>
-          <ul class="eco-friendly__list">
-            <li class="eco-friendly__list-item">
-              <h5 class="subtitle-3 list-item__heading">Choose Your Product</h5>
-              <p class="body-text-1 list-item__body-text">
-                In our listing, we have several collections of organic products.
-                This is the place where you need to choose the product you want.
+      <section class="offer-products-section">
+        <div class="offer-prodcuts__content section-content">
+          <div class="offer-products__header">
+            <div class="offer-products__headline">
+              <p class="display-text offer-products__display-text">
+                Offer Products
               </p>
-            </li>
-            <li class="eco-friendly__list-item">
-              <h5 class="subtitle-3 list-item__heading">
-                Farmers Will Produce
-              </h5>
-              <p class="body-text-1 list-item__body-text">
-                The Product that you ordered will be verified that we have or
-                not if have we will start to move on with the next step.
-              </p>
-            </li>
-            <li class="eco-friendly__list-item">
-              <h5 class="subtitle-3 list-item__heading list-item__body-text">
-                We Can Delivery too
-              </h5>
-              <p class="body-text-1">
-                If you are not comfortable going to the nearby market place we
-                also will deliver your product to your doorstep.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="offer-products">
-        <div class="offer-products__header">
-          <div class="offer-products__headline">
-            <p class="display-text offer-products__display-text">
-              Offer Products
-            </p>
-            <h2 class="heading-2 offer-products__heading">
-              We Offer Organic for You
-            </h2>
-          </div>
-          <a href="#" class="btn btn--primary">
-            <span class="btn__text">Explore now</span>
-            <svg class="btn__icon">
-              <use xlink:href="../svgs/sprite.svg#Arrow" />
-            </svg>
-          </a>
-        </div>
-        <div class="products-container">
-          <div class="product">
-            <div class="label product__label">Vegetable</div>
-            <img
-              src="/images/product-4-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Vegan Red Tomato</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 14.00 USD</div>
-                <div class="body-text-bold product__price--new">$ 9.37 USD</div>
-              </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
+              <h2 class="heading-2 offer-products__heading">
+                We Offer Organic for You
+              </h2>
             </div>
+            <a href="#" class="btn btn--primary">
+              <span class="btn__text">Explore now</span>
+              <svg class="btn__icon">
+                <use xlink:href="../svgs/sprite.svg#Arrow" />
+              </svg>
+            </a>
           </div>
-          <div class="product">
-            <div class="label product__label">Fruits</div>
-            <img
-              src="/images/product-5-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Organic Almonds</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 21.00 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 18.00 USD
+          <div class="products-container">
+            <div class="product">
+              <div class="label product__label">Vegetable</div>
+              <img
+                src="/images/product-4-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Vegan Red Tomato</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 14.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 9.37 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-              </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="label product__label">Vegetable</div>
-            <img
-              src="/images/product-2-1x.jpg"
-              alt="brocolli, product one"
-              class="product__img"
-              loading="lazy"
-            />
-            <p class="subtitle-1 product__name">Fresh Corn</p>
-            <div class="product__info">
-              <div class="product__price">
-                <div class="body-text-1 product__price--old">$ 21.23 USD</div>
-                <div class="body-text-bold product__price--new">
-                  $ 18.00 USD
+            <div class="product">
+              <div class="label product__label">Fruits</div>
+              <img
+                src="/images/product-5-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Organic Almonds</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 21.00 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 18.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
                 </div>
               </div>
-              <div class="product__rating">
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
-                <svg class="product__rating-icon">
-                  <use xlink:href="../svgs/sprite.svg#Star" />
-                </svg>
+            </div>
+            <div class="product">
+              <div class="label product__label">Vegetable</div>
+              <img
+                src="/images/product-2-1x.jpg"
+                alt="brocolli, product one"
+                class="product__img"
+                loading="lazy"
+              />
+              <p class="subtitle-1 product__name">Fresh Corn</p>
+              <div class="product__info">
+                <div class="product__price">
+                  <div class="body-text-1 product__price--old">$ 21.23 USD</div>
+                  <div class="body-text-bold product__price--new">
+                    $ 18.00 USD
+                  </div>
+                </div>
+                <div class="product__rating">
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                  <svg class="product__rating-icon">
+                    <use xlink:href="../svgs/sprite.svg#Star" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="eco-friendly">
-        <img
-          src="/images/eco-friendly-2x.jpg"
-          alt="natural field"
-          loading="lazy"
-          class="eco-friendly__img"
-        />
-        <div class="eco-friendly__card">
-          <p class="display-text eco-friendly__display-text">Eco friendly</p>
-          <h2 class="heading-2">From our Farm to your Home</h2>
-          <ul class="eco-friendly__list">
-            <li class="eco-friendly__list-item">
-              <h5 class="subtitle-3 list-item__heading">Choose Your Product</h5>
-              <p class="body-text-1 list-item__body-text">
-                In our listing, we have several collections of organic products.
-                This is the place where you need to choose the product you want.
-              </p>
-            </li>
-            <li class="eco-friendly__list-item">
-              <h5 class="subtitle-3 list-item__heading">
-                Farmers Will Produce
-              </h5>
-              <p class="body-text-1 list-item__body-text">
-                The Product that you ordered will be verified that we have or
-                not if have we will start to move on with the next step.
-              </p>
-            </li>
-            <li class="eco-friendly__list-item">
-              <h5 class="subtitle-3 list-item__heading list-item__body-text">
-                We Can Delivery too
-              </h5>
-              <p class="body-text-1">
-                If you are not comfortable going to the nearby market place we
-                also will deliver your product to your doorstep.
-              </p>
-            </li>
-          </ul>
+      <section class="eco-friendly-section">
+        <div class="eco-friendly__content section-content">
+          <img
+            src="/images/eco-friendly-2x.jpg"
+            alt="natural field"
+            loading="lazy"
+            class="eco-friendly__img"
+          />
+          <div class="eco-friendly__card">
+            <p class="display-text eco-friendly__display-text">Eco friendly</p>
+            <h2 class="heading-2">From our Farm to your Home</h2>
+            <ul class="eco-friendly__list">
+              <li class="eco-friendly__list-item">
+                <h5 class="subtitle-3 list-item__heading">
+                  Choose Your Product
+                </h5>
+                <p class="body-text-1 list-item__body-text">
+                  In our listing, we have several collections of organic
+                  products. This is the place where you need to choose the
+                  product you want.
+                </p>
+              </li>
+              <li class="eco-friendly__list-item">
+                <h5 class="subtitle-3 list-item__heading">
+                  Farmers Will Produce
+                </h5>
+                <p class="body-text-1 list-item__body-text">
+                  The Product that you ordered will be verified that we have or
+                  not if have we will start to move on with the next step.
+                </p>
+              </li>
+              <li class="eco-friendly__list-item">
+                <h5 class="subtitle-3 list-item__heading list-item__body-text">
+                  We Can Delivery too
+                </h5>
+                <p class="body-text-1">
+                  If you are not comfortable going to the nearby market place we
+                  also will deliver your product to your doorstep.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="list-offer-cards products-container">
-        <div class="offer-card">
-          <img
-            src="/images/card-offer-1-1x.jpg"
-            alt="product offer, fruit juice"
-            class="offer-card__img"
-          />
-          <div class="offer-card__overlay"></div>
-          <div class="offer-card__content">
-            <p class="subtitle-3 offer-card__label">Fruit Juice</p>
+      <section class="list-offer-cards-section">
+        <div class="products-container section-content">
+          <div class="offer-card">
+            <img
+              src="/images/card-offer-1-1x.jpg"
+              alt="product offer, fruit juice"
+              class="offer-card__img"
+            />
+            <div class="offer-card__overlay"></div>
+            <div class="offer-card__content">
+              <p class="subtitle-3 offer-card__label">Fruit Juice</p>
+            </div>
           </div>
-        </div>
-        <div class="offer-card">
-          <img
-            src="/images/card-offer-2-1x.jpg"
-            alt="product offer, fruit juice"
-            class="offer-card__img"
-          />
-          <div class="offer-card__overlay"></div>
-          <div class="offer-card__content">
-            <p class="subtitle-3 offer-card__label">Organic Food</p>
+          <div class="offer-card">
+            <img
+              src="/images/card-offer-2-1x.jpg"
+              alt="product offer, fruit juice"
+              class="offer-card__img"
+            />
+            <div class="offer-card__overlay"></div>
+            <div class="offer-card__content">
+              <p class="subtitle-3 offer-card__label">Organic Food</p>
+            </div>
           </div>
-        </div>
-        <div class="offer-card">
-          <img
-            src="/images/card-offer-3-1x.jpg"
-            alt="product offer, fruit juice"
-            class="offer-card__img"
-          />
-          <div class="offer-card__overlay"></div>
-          <div class="offer-card__content">
-            <p class="subtitle-3 offer-card__label">Nuts Cookies</p>
+          <div class="offer-card">
+            <img
+              src="/images/card-offer-3-1x.jpg"
+              alt="product offer, fruit juice"
+              class="offer-card__img"
+            />
+            <div class="offer-card__overlay"></div>
+            <div class="offer-card__content">
+              <p class="subtitle-3 offer-card__label">Nuts Cookies</p>
+            </div>
           </div>
         </div>
       </section>

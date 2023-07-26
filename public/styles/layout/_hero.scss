@@ -1,8 +1,12 @@
-.hero {
+.hero-section {
   background-image: url("../../images/hero-bg-2x.jpg");
-  padding: 16rem 4rem;
   background-size: cover;
   background-position: center;
+}
+
+.hero {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
 
   &__content {
     width: 49.6rem;

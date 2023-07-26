@@ -1,7 +1,10 @@
-.about {
+.about-section {
   background-color: $color-grey-light-1;
-  padding: 8rem 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 
+.about {
   &__content {
     display: flex;
     justify-content: space-between;
