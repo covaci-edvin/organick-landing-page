@@ -16,7 +16,6 @@
 
   &__card {
     background-color: $color-white;
-
     position: absolute;
     right: 0;
     color: $color-body;
@@ -32,18 +31,17 @@
     margin-top: 5.6rem;
 
     & > *:not(:last-child) {
-    margin-bottom: 1.6rem;
-
+      margin-bottom: 1.6rem;
     }
   }
 }
 
-.list__item{
-    &__heading{
-        margin-bottom: .4rem;
-    }
+.list__item {
+  &__heading {
+    margin-bottom: 0.4rem;
+  }
 
-    &__body-text{
-        color: $color-grey-dark-2;
-    }
+  &__body-text {
+    color: $color-grey-dark-2;
+  }
 }
