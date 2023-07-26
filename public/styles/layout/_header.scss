@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__logo-box {
+    height: 5.6rem;
+  }
 }
 
 .menu {
