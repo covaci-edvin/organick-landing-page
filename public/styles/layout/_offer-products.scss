@@ -1,6 +1,21 @@
-.offer-products {
+.offer-products-section {
   background-color: $color-body;
-  padding: 8rem 4rem;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+}
+
+.offer-products {
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__display-text {
     color: $color-primary;

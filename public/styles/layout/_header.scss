@@ -1,6 +1,10 @@
-.header {
-  padding: 4.8rem 4rem;
+.header-section {
   background-color: $color-white;
+}
+
+.header {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,9 +1,13 @@
+.eco-friendly-section {
+}
+
 .eco-friendly {
-  margin: 0 auto;
-  max-width: 144rem;
-  display: flex;
-  align-items: center;
-  position: relative;
+  &__content {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
 
   &__display-text {
     color: $color-primary;
