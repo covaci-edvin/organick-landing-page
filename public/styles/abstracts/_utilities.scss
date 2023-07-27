@@ -1,6 +1,14 @@
 .section-content {
-    max-width: 144rem;
-    margin: 0 auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.responsive-3-col {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 43.2rem);
+  gap: 3.2rem;
 }
