@@ -1,0 +1,21 @@
+.news {
+  padding: 9.6rem 4rem;
+  color: $color-body;
+
+  &__display-text {
+    color: $color-primary;
+  }
+
+  &__header-container {
+    margin-bottom: 6rem;
+  }
+}
+
+.news-container {
+  margin: 0 auto;
+  max-width: 136rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}

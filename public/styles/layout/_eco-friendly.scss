@@ -1,9 +1,13 @@
+.eco-friendly-section {
+}
+
 .eco-friendly {
-  margin: 0 auto;
-  max-width: 144rem;
-  display: flex;
-  align-items: center;
-  position: relative;
+  &__content {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
 
   &__display-text {
     color: $color-primary;
@@ -20,7 +24,7 @@
     right: 0;
     color: $color-body;
     border-radius: 3.2rem;
-    box-shadow: 1.6rem 2.4rem 5.3rem -0.8rem rgba(0, 0, 0, 0.15);
+    box-shadow: $shadow;
     padding: 3.6rem 4.2rem 6.8rem 4.2rem;
     margin: 4rem;
     max-width: 71.3rem;

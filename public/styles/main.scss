@@ -1,5 +1,6 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./abstracts/utilities";
 
 @import "./base/base";
 @import "./base/typography";
@@ -10,6 +11,9 @@
 @import "./components/product";
 @import "./components/products-container";
 @import "./components/offer-card";
+@import "./components/header-container";
+@import "./components/headline-container";
+@import "./components/news-card";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -20,6 +24,4 @@
 @import "./layout/eco-friendly";
 @import "./layout/offer-products";
 @import "./layout/list-offer-cards";
-
-
-
+@import "./layout/news";
