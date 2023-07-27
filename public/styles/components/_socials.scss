@@ -16,11 +16,10 @@
   &__icon {
     height: 2.4rem;
     width: 2.4rem;
-    transition: all 0.2s;
+    transition: transform 0.2s;
   }
 
   &:hover &__icon {
     transform: scale(1.2);
-    fill: $color-primary;
   }
 }
