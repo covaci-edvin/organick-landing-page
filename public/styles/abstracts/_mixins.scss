@@ -1,5 +1,17 @@
-@mixin for-mobile-only {
+@mixin for-mobile-down {
   @media only screen and (max-width: 64em) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-down {
+  @media only screen and (max-width: 56.25em) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-down {
+  @media only screen and (max-width: 48em) {
     @content;
   }
 }

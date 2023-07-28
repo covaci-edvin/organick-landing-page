@@ -1,3 +1,14 @@
 .logo-box {
   height: 5.6rem;
+  width: 20rem;
+
+  @include for-tablet-portrait-down {
+    height: 4rem;
+    width: 14.2rem;
+  }
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
 }

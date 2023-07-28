@@ -5,7 +5,7 @@
   gap: -7rem;
   background-color: #fcfcfc;
 
-  @include for-mobile-only {
+  @include for-mobile-down {
     justify-content: center;
   }
 
@@ -15,7 +15,7 @@
     max-width: 20%;
     object-fit: cover;
 
-    @include for-mobile-only {
+    @include for-mobile-down {
       display: none;
     }
   }
@@ -30,7 +30,7 @@
   justify-content: center;
   text-align: center;
 
-  @include for-mobile-only {
+  @include for-mobile-down {
     margin: 6.4rem 1.6rem;
   }
 

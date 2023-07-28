@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding-left: 4rem;
   padding-right: 4rem;
+
+  @include for-tablet-portrait-down {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
 
 .responsive-3-col {
