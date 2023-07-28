@@ -1,7 +1,13 @@
-.news {
-  padding: 9.6rem 4rem;
-  color: $color-body;
+.news-section {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
 
+.news-content {
+  color: $color-body;
+}
+
+.news {
   &__display-text {
     color: $color-primary;
   }
@@ -12,10 +18,14 @@
 }
 
 .news-container {
-  margin: 0 auto;
-  max-width: 136rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // display: grid;
+  // grid-template-columns: repeat(
+  //   auto-fit,
+  //   minmax(36.8rem, calc(50% - 3rem / 2))
+  // );
+  // justify-content: center;
+  // gap: 3rem;
 }

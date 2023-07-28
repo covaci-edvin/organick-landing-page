@@ -2,12 +2,12 @@
   padding-top: 9.6rem;
   padding-bottom: 9.6rem;
   display: flex;
-  justify-content: space-between;
-  gap: 3.1rem;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .offer {
-  width: 100%;
+  flex: 1;
   background-size: cover;
   border-radius: 3.2rem;
   background-position: center;
@@ -15,6 +15,7 @@
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
+  min-width: 36.8rem;
 
   &--1 {
     $color-shadow: rgba(246, 100, 139, 0.6);

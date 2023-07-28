@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding-left: 4rem;
   padding-right: 4rem;
+
+  @include for-phone-only {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
 
 .responsive-3-col {
@@ -11,4 +16,14 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 43.2rem);
   gap: 3.2rem;
+}
+
+.responsive-2-col {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(36.8rem, calc(50% - 3rem / 2))
+  );
+  justify-content: center;
+  gap: 3rem;
 }
