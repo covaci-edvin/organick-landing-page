@@ -4,8 +4,13 @@
   }
 }
 
-@mixin offer-hover ($color){
+@mixin for-phone-only {
+  @media only screen and (max-width: 25em) {
+    @content;
+  }
+}
 
+@mixin offer-hover($color) {
   &:hover {
     box-shadow: 0 0.5rem 3rem $color;
     transform: translateY(-0.3rem);
