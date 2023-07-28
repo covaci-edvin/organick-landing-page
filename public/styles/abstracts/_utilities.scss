@@ -1,14 +1,23 @@
 .section-content {
   max-width: 144rem;
   margin: 0 auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding: 0 4rem;
+
+  @include for-phone-only {
+    padding: 0 1.6rem;
+  }
 }
 
-.responsive-3-col {
+.responsive-2d-layout {
   display: grid;
   width: 100%;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 43.2rem);
   gap: 3.2rem;
+}
+
+.responsive-1d-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
