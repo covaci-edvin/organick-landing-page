@@ -13,17 +13,17 @@
   background-position: center;
   cursor: pointer;
   transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
 
   &--1 {
     $color-shadow: rgba(246, 100, 139, 0.6);
-    background-image: url("../../images/offer-1-2x.jpg");
     color: $color-white;
     @include offer-hover($color-shadow);
   }
 
   &--2 {
     $color-shadow: rgba(246, 169, 50, 0.6);
-    background-image: url("../../images/offer-2-2x.jpg");
     color: $color-body;
     @include offer-hover($color-shadow);
   }
@@ -31,5 +31,15 @@
   &__content {
     width: 26rem;
     margin: 10.8rem 5.6rem;
+  }
+
+  &__img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
   }
 }
