@@ -3,41 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
-      rel="preload"
-      as="style"
-      crossorigin
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="preload"
-      href="https://fonts.gstatic.com/s/yellowtail/v18/OZpGg_pnoDtINPfRIlLohlvHwWL9f4k.woff2"
-      as="font"
-      crossorigin
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      crossorigin
-      href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2"
-      as="font"
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      crossorigin
-      href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2"
-      as="font"
-      type="font/woff2"
-    />
+    <link rel="icon" type="image/svg+xml" href="/svgs/organick.svg" />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="/public/styles/main.scss" />
 
     <link rel="preload" type="image/svg+xml" href="/svgs/logo.svg" as="image" />
     <link
@@ -46,9 +15,6 @@
       href="/images/hero-bg-2x.jpg"
       as="image"
     />
-
-    <link rel="icon" type="image/svg+xml" href="/svgs/organick.svg" />
-    <link rel="stylesheet" href="/public/styles/main.scss" />
 
     <title>Organick</title>
   </head>
@@ -134,14 +100,14 @@
         </div>
       </section>
       <section class="offers-section">
-        <div class="offers-content section-content">
+        <div class="offers-content section-content responsive-1d-layout">
           <div class="offer offer--1">
             <div class="offer__content">
               <p class="display-text offer__display-text">Natural!!</p>
               <h3 class="heading-3 offer__heading">Get Garden Fresh Fruits</h3>
             </div>
             <img
-              src="/public/images/offer-1-2x.jpg"
+              src="/images/offer-1-2x.jpg"
               alt="offer one"
               class="offer__img"
             />
@@ -152,7 +118,7 @@
               <h3 class="heading-3">Get 10% off on Vegetables</h3>
             </div>
             <img
-              src="/public/images/offer-2-2x.jpg"
+              src="/images/offer-2-2x.jpg"
               alt="offer two"
               class="offer__img"
             />
@@ -222,7 +188,7 @@
         <div class="products__content section-content">
           <p class="display-text products__display-text">Organic</p>
           <h2 class="heading-2 products__heading">Our Products</h2>
-          <div class="responsive-3-col">
+          <div class="responsive-2d-layout">
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
@@ -473,8 +439,8 @@
       </section>
       <section class="offer-products-section">
         <div class="offer-prodcuts__content section-content">
-          <div class="offer-products__header">
-            <div class="offer-products__headline">
+          <div class="header-container">
+            <div class="headline-container">
               <p class="display-text offer-products__display-text">
                 Offer Products
               </p>
@@ -489,7 +455,7 @@
               </svg>
             </a>
           </div>
-          <div class="responsive-3-col">
+          <div class="responsive-2d-layout">
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
@@ -631,7 +597,7 @@
         </div>
       </section>
       <section class="list-offer-cards-section">
-        <div class="responsive-3-col section-content">
+        <div class="responsive-2d-layout section-content">
           <div class="offer-card">
             <img
               src="/images/card-offer-1-1x.jpg"
@@ -667,82 +633,86 @@
           </div>
         </div>
       </section>
-      <section class="news">
-        <div class="header-container news__header-container">
-          <div class="headline-container">
-            <p class="display-text news__display-text">News</p>
-            <h2 class="heading-2">Discover content about organic products</h2>
+      <section class="news-section">
+        <div class="news-content section-content">
+          <div class="header-container news__header-container">
+            <div class="headline-container">
+              <p class="display-text news__display-text">News</p>
+              <h2 class="heading-2">Discover content about organic products</h2>
+            </div>
+            <a href="#" class="btn btn--outline">
+              <span class="btn__text">More News</span>
+              <svg class="btn__icon">
+                <use xlink:href="/svgs/sprite.svg#Arrow" />
+              </svg>
+            </a>
           </div>
-          <a href="#" class="btn btn--outline">
-            <span class="btn__text">More News</span>
-            <svg class="btn__icon">
-              <use xlink:href="/svgs/sprite.svg#Arrow" />
-            </svg>
-          </a>
-        </div>
-        <div class="news-container">
-          <div class="news-card">
-            <img
-              src="/images/news-1-1x.jpg"
-              alt="green salad"
-              class="news-card__img"
-            />
-            <div class="news-card__date">
-              <h4 class="heading-4">14</h4>
-              <p class="label-text">Feb</p>
-            </div>
-            <div class="news-card__content">
-              <div class="news-card__user">
-                <svg class="news-card__user-icon">
-                  <use xlink:href="/svgs/sprite.svg#User" />
-                </svg>
-                <p class="body-text-1 news-card__user-name">Kristina Castle</p>
+          <div class="responsive-1d-layout">
+            <div class="news-card">
+              <img
+                src="/images/news-1-1x.jpg"
+                alt="green salad"
+                class="news-card__img"
+              />
+              <div class="news-card__date">
+                <h4 class="heading-4">14</h4>
+                <p class="label-text">Feb</p>
               </div>
-              <h5 class="subtitle-3">
-                Everything You Need to Know About Organic
-              </h5>
-              <p class="body-text-1 news-card__summary">
-                Organic farming is the only way that you still can experience
-                the real world.
-              </p>
-              <a href="#" class="btn btn--link">
-                <span class="btn__text">View More</span>
-                <svg class="btn__icon">
-                  <use xlink:href="./svgs/sprite.svg#Arrow" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="news-card">
-            <img
-              src="/images/news-2-1x.jpg"
-              alt="green salad"
-              class="news-card__img"
-            />
-            <div class="news-card__date">
-              <h4 class="heading-4">24</h4>
-              <p class="label-text">Sep</p>
-            </div>
-            <div class="news-card__content">
-              <div class="news-card__user">
-                <svg class="news-card__user-icon">
-                  <use xlink:href="/svgs/sprite.svg#User" />
-                </svg>
-                <p class="body-text-1">Alex Louis</p>
+              <div class="news-card__content">
+                <div class="news-card__user">
+                  <svg class="news-card__user-icon">
+                    <use xlink:href="/svgs/sprite.svg#User" />
+                  </svg>
+                  <p class="body-text-1 news-card__user-name">
+                    Kristina Castle
+                  </p>
+                </div>
+                <h5 class="subtitle-3">
+                  Everything You Need to Know About Organic
+                </h5>
+                <p class="body-text-1 news-card__summary">
+                  Organic farming is the only way that you still can experience
+                  the real world.
+                </p>
+                <a href="#" class="btn btn--link">
+                  <span class="btn__text">View More</span>
+                  <svg class="btn__icon">
+                    <use xlink:href="./svgs/sprite.svg#Arrow" />
+                  </svg>
+                </a>
               </div>
-              <h5 class="subtitle-3">
-                Organic Fruits: Surprising Benefits and Facts
-              </h5>
-              <p class="body-text-1 news-card__summary">
-                The world of nature has grown on the principles of health,
-                ecology, and care.
-              </p>
-              <a href="#" class="btn btn--link">
-                <span class="btn__text">View More</span>
-                <svg class="btn__icon">
-                  <use xlink:href="./svgs/sprite.svg#Arrow" />
-                </svg>
-              </a>
+            </div>
+            <div class="news-card">
+              <img
+                src="/images/news-2-1x.jpg"
+                alt="green salad"
+                class="news-card__img"
+              />
+              <div class="news-card__date">
+                <h4 class="heading-4">24</h4>
+                <p class="label-text">Sep</p>
+              </div>
+              <div class="news-card__content">
+                <div class="news-card__user">
+                  <svg class="news-card__user-icon">
+                    <use xlink:href="/svgs/sprite.svg#User" />
+                  </svg>
+                  <p class="body-text-1">Alex Louis</p>
+                </div>
+                <h5 class="subtitle-3">
+                  Organic Fruits: Surprising Benefits and Facts
+                </h5>
+                <p class="body-text-1 news-card__summary">
+                  The world of nature has grown on the principles of health,
+                  ecology, and care.
+                </p>
+                <a href="#" class="btn btn--link">
+                  <span class="btn__text">View More</span>
+                  <svg class="btn__icon">
+                    <use xlink:href="./svgs/sprite.svg#Arrow" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
