@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin-bottom: 4.8rem;
 
-  @include for-mobile-only {
+  @include for-mobile-down {
     flex-direction: column;
     align-items: flex-start;
     gap: 2.4rem;
