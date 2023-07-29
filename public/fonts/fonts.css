@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "RobotoNormal";
+  src: url(../fonts/roboto_normal.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url(../fonts/roboto_bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url(../fonts/yellowtail_normal.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
