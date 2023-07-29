@@ -24,23 +24,57 @@
         <div class="logo-box">
           <img src="/svgs/logo.svg" alt="Organick header logo" class="logo" />
         </div>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">About us</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Shop</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Pages</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Contact us</a>
-          </li>
-        </ul>
+        <div class="header-content">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About us</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Shop</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Pages</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact us</a>
+              </li>
+            </ul>
+            <div class="socials">
+              <a href="#" class="social">
+                <svg class="social__icon">
+                  <use xlink:href="/svgs/sprite.svg#facebook" />
+                </svg>
+              </a>
+              <a href="#" class="social">
+                <svg class="social__icon">
+                  <use xlink:href="/svgs/sprite.svg#twitter" />
+                </svg>
+              </a>
+              <a href="#" class="social">
+                <svg class="social__icon">
+                  <use xlink:href="/svgs/sprite.svg#instagram" />
+                </svg>
+              </a>
+              <a href="#" class="social">
+                <svg class="social__icon">
+                  <use xlink:href="/svgs/sprite.svg#pinterest" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hamburger">
+            <svg class="open-icon hamburger__icon show-icon">
+              <use xlink:href="/svgs/sprite.svg#Burger" />
+            </svg>
+            <svg class="close-icon hamburger__icon">
+              <use xlink:href="/svgs/sprite.svg#Cross" />
+            </svg>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -801,6 +835,6 @@
       </div>
       <div class="body-text-1 footer__copyright">Copyright &copy; Organick</div>
     </footer>
-    <!-- <script type="module" src="./main.js"></script> -->
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

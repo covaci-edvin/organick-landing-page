@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 4rem;
 
-  @include for-phone-only {
+  @include for-tablet-portrait-down {
     padding: 0 1.6rem;
   }
 }

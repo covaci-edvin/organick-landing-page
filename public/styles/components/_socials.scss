@@ -1,5 +1,6 @@
 .socials {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 6.4rem);
   gap: 2.4rem;
   justify-content: center;
 }

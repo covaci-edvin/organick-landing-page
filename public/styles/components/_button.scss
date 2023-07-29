@@ -9,7 +9,7 @@
   transition: filter 0.2s;
   white-space: nowrap;
 
-  @include for-mobile-only {
+  @include for-mobile-down {
     padding: 1.6rem 2.4rem;
     gap: 1.6rem;
   }
