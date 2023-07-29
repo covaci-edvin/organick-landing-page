@@ -1,15 +1,10 @@
-.products-section {
-  padding-top: 9.6rem;
-  padding-bottom: 9.6rem;
-}
-
 .products {
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   &__display-text {
     color: $color-primary;
   }

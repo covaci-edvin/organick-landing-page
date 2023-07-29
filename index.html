@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="/public/styles/main.scss" />
 
     <link rel="preload" type="image/svg+xml" href="/svgs/logo.svg" as="image" />
+
     <link
       rel="preload"
-      type="image/jpg"
-      href="/images/hero-bg-2x.jpg"
       as="image"
+      imagesrcset="/images/hero-bg-small-1x.webp 1x, /images/hero-bg-small-2x.webp 2x"
+      media="(max-width: 768px)"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/images/hero-bg-1x.webp 1x, /images/hero-bg-2x.webp 2x"
+      media="(min-width: 767px)"
     />
 
     <title>Organick</title>
@@ -79,11 +87,21 @@
     </header>
     <main>
       <section class="hero-section">
-        <img
-          src="/images/hero-bg-2x.jpg"
-          alt="fresh fruits on a table"
-          class="hero__bg-img"
-        />
+        <picture class="hero__bg-img-container">
+          <source
+            srcset="
+              /images/hero-bg-small-1x.webp 1x,
+              /images/hero-bg-small-2x.webp 2x
+            "
+            media="(max-width: 48em)"
+            class="hero__bg-img"
+          />
+          <img
+            srcset="/images/hero-bg-1x.webp 1x, /images/hero-bg-2x.webp 2x"
+            alt="fresh fruits on a table"
+            class="hero__bg-img"
+          />
+        </picture>
         <div class="hero section-content">
           <div class="hero__content">
             <p class="display-text hero__display-text">Made with nature</p>
@@ -107,9 +125,10 @@
               <h3 class="heading-3 offer__heading">Get Garden Fresh Fruits</h3>
             </div>
             <img
-              src="/images/offer-1-2x.jpg"
+              srcset="/images/offer-1-1x.webp 1x, /images/offer-1-2x.webp 2x"
               alt="offer one"
               class="offer__img"
+              loading="lazy"
             />
           </div>
           <div class="offer offer--2">
@@ -118,21 +137,33 @@
               <h3 class="heading-3">Get 10% off on Vegetables</h3>
             </div>
             <img
-              src="/images/offer-2-2x.jpg"
+              srcset="/images/offer-2-1x.webp 1x, /images/offer-2-2x.webp 2x"
               alt="offer two"
               class="offer__img"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
       <section class="about-section">
         <div class="about__content section-content">
-          <img
-            src="/images/about-2x.png"
-            alt="fresh citrus fruits"
-            class="about__img"
-            loading="lazy"
-          />
+          <picture class="about__img-container">
+            <source
+              srcset="
+                /images/about-small-1x.png 1x,
+                /images/about-small-2x.png 2x
+              "
+              media="(max-width: 56.25em)"
+              class="about__img"
+            />
+            <img
+              srcset="/images/about-1x.png 1x, /images/about-2x.png 2x"
+              alt="fresh citrus fruits"
+              loading="lazy"
+              class="about__img"
+            />
+          </picture>
+
           <div class="about__info">
             <p class="display-text about__display-text">About Us</p>
             <h2 class="heading-2 about__heading">
@@ -184,7 +215,7 @@
           </div>
         </div>
       </section>
-      <section class="products-section">
+      <section class="products-section section-padding">
         <div class="products__content section-content">
           <p class="display-text products__display-text">Organic</p>
           <h2 class="heading-2 products__heading">Our Products</h2>
@@ -192,7 +223,10 @@
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
-                src="/images/product-1-1x.jpg"
+                srcset="
+                  /images/product-1-1x.webp 1x,
+                  /images/product-1-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -229,7 +263,10 @@
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
-                src="/images/product-2-1x.jpg"
+                srcset="
+                  /images/product-2-1x.webp 1x,
+                  /images/product-2-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -260,7 +297,10 @@
             <div class="product">
               <div class="label product__label">Millets</div>
               <img
-                src="/images/product-3-1x.jpg"
+                srcset="
+                  /images/product-3-1x.webp 1x,
+                  /images/product-3-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -294,7 +334,10 @@
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
-                src="/images/product-4-1x.jpg"
+                srcset="
+                  /images/product-4-1x.webp 1x,
+                  /images/product-4-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -328,7 +371,10 @@
             <div class="product">
               <div class="label product__label">Fruits</div>
               <img
-                src="/images/product-5-1x.jpg"
+                srcset="
+                  /images/product-5-1x.webp 1x,
+                  /images/product-5-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -356,7 +402,10 @@
             <div class="product">
               <div class="label product__label">Millets</div>
               <img
-                src="/images/product-6-1x.jpg"
+                srcset="
+                  /images/product-6-1x.webp 1x,
+                  /images/product-6-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -389,7 +438,7 @@
       </section>
       <section class="testimonials">
         <img
-          src="/images/story-left-2x.jpg"
+          srcset="/images/story-left-1x.webp 1x, /images/story-left-2x.webp 2x"
           alt="natural products as background image"
           class="testimonials__bg-img--left"
           loading="lazy"
@@ -400,7 +449,7 @@
             What Our Custumer Saying?
           </h2>
           <img
-            src="/images/sara-avatar.jpg"
+            src="/images/sara-avatar.webp"
             alt="Sara Taylor, Organick customer"
             class="testimonial__avatar"
             loading="lazy"
@@ -431,13 +480,16 @@
           <p class="label-text testimonial__customer-type">Consumer</p>
         </div>
         <img
-          src="/images/story-right-2x.jpg"
+          srcset="
+            /images/story-right-1x.webp 1x,
+            /images/story-right-2x.webp 2x
+          "
           alt="natural products as background image"
           class="testimonials__bg-img--right"
           loading="lazy"
         />
       </section>
-      <section class="offer-products-section">
+      <section class="offer-products-section section-padding">
         <div class="offer-prodcuts__content section-content">
           <div class="header-container">
             <div class="headline-container">
@@ -459,7 +511,10 @@
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
-                src="/images/product-4-1x.jpg"
+                srcset="
+                  /images/product-4-1x.webp 1x,
+                  /images/product-4-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -493,7 +548,10 @@
             <div class="product">
               <div class="label product__label">Fruits</div>
               <img
-                src="/images/product-5-1x.jpg"
+                srcset="
+                  /images/product-5-1x.webp 1x,
+                  /images/product-5-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -521,7 +579,10 @@
             <div class="product">
               <div class="label product__label">Vegetable</div>
               <img
-                src="/images/product-2-1x.jpg"
+                srcset="
+                  /images/product-2-1x.webp 1x,
+                  /images/product-2-2x.webp 2x
+                "
                 alt="brocolli, product one"
                 class="product__img"
                 loading="lazy"
@@ -555,10 +616,13 @@
       <section class="eco-friendly-section">
         <div class="eco-friendly__content section-content">
           <img
-            src="/images/eco-friendly-2x.jpg"
+            srcset="
+              /images/eco-friendly-1x.webp 1x,
+              /images/eco-friendly-2x.webp 2x
+            "
             alt="natural field"
-            loading="lazy"
             class="eco-friendly__img"
+            loading="lazy"
           />
           <div class="eco-friendly__card">
             <p class="display-text eco-friendly__display-text">Eco friendly</p>
@@ -584,10 +648,10 @@
                 </p>
               </li>
               <li class="eco-friendly__list-item">
-                <h5 class="subtitle-3 list-item__heading list-item__body-text">
+                <h5 class="subtitle-3 list-item__heading">
                   We Can Delivery too
                 </h5>
-                <p class="body-text-1">
+                <p class="body-text-1 list-item__body-text">
                   If you are not comfortable going to the nearby market place we
                   also will deliver your product to your doorstep.
                 </p>
@@ -600,9 +664,13 @@
         <div class="responsive-2d-layout section-content">
           <div class="offer-card">
             <img
-              src="/images/card-offer-1-1x.jpg"
+              srcset="
+                /images/card-offer-1-1x.webp 1x,
+                /images/card-offer-1-2x.webp 2x
+              "
               alt="product offer, fruit juice"
               class="offer-card__img"
+              loading="lazy"
             />
             <div class="offer-card__overlay"></div>
             <div class="offer-card__content">
@@ -611,9 +679,13 @@
           </div>
           <div class="offer-card">
             <img
-              src="/images/card-offer-2-1x.jpg"
+              srcset="
+                /images/card-offer-2-1x.webp 1x,
+                /images/card-offer-2-2x.webp 2x
+              "
               alt="product offer, organic food"
               class="offer-card__img"
+              loading="lazy"
             />
             <div class="offer-card__overlay"></div>
             <div class="offer-card__content">
@@ -622,9 +694,13 @@
           </div>
           <div class="offer-card">
             <img
-              src="/images/card-offer-3-1x.jpg"
+              srcset="
+                /images/card-offer-3-1x.webp 1x,
+                /images/card-offer-3-2x.webp 2x
+              "
               alt="product offer, nuts cookies"
               class="offer-card__img"
+              loading="lazy"
             />
             <div class="offer-card__overlay"></div>
             <div class="offer-card__content">
@@ -633,7 +709,7 @@
           </div>
         </div>
       </section>
-      <section class="news-section">
+      <section class="news-section section-padding">
         <div class="news-content section-content">
           <div class="header-container news__header-container">
             <div class="headline-container">
@@ -650,9 +726,10 @@
           <div class="responsive-1d-layout">
             <div class="news-card">
               <img
-                src="/images/news-1-1x.jpg"
+                srcset="/images/news-1-1x.webp 1x, /images/news-1-2x.webp 2x"
                 alt="green salad"
                 class="news-card__img"
+                loading="lazy"
               />
               <div class="news-card__date">
                 <h4 class="heading-4">14</h4>
@@ -684,9 +761,10 @@
             </div>
             <div class="news-card">
               <img
-                src="/images/news-2-1x.jpg"
+                srcset="/images/news-2-1x.webp 1x, /images/news-2-2x.webp 2x"
                 alt="green salad"
                 class="news-card__img"
+                loading="lazy"
               />
               <div class="news-card__date">
                 <h4 class="heading-4">24</h4>
@@ -720,11 +798,26 @@
       <section class="subscribe-section">
         <div class="section-content">
           <div class="subscribe__content">
-            <img
-              src="/images/subscribe-2x.jpg"
-              alt="fresh organges as a background image"
-              class="subscribe__img"
-            />
+            <picture class="subscribe__img-container">
+              <source
+                srcset="
+                  /images/subscribe-small-1x.webp 1x,
+                  /images/subscribe-small-2x.webp 2x
+                "
+                media="(max-width: 48em)"
+                class="subscribe__img"
+              />
+
+              <img
+                srcset="
+                  /images/subscribe-1x.webp 1x,
+                  /images/subscribe-2x.webp 2x
+                "
+                alt="fresh organges as a background image"
+                class="subscribe__img"
+                loading="lazy"
+              />
+            </picture>
             <div class="subscribe__form-container">
               <h2 class="heading-2 subscribe__heading">
                 Subscribe our Newsletter

@@ -8,6 +8,10 @@
   transition: outline 0.2s;
   line-height: 3.2rem;
 
+  @include for-tablet-portrait-down {
+    width: 100%;
+  }
+
   &:focus {
     outline: 2px solid $color-secondary;
   }

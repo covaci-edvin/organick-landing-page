@@ -2,20 +2,39 @@
   position: relative;
 }
 
-.hero__bg-img {
+.hero__bg-img-container {
   position: absolute;
-  object-fit: cover;
+
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+
+.hero__bg-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  @include for-tablet-portrait-down {
+    object-position: left;
+  }
 }
 
 .hero {
   padding-top: 16rem;
   padding-bottom: 16rem;
 
+  @include for-tablet-portrait-down {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+
   &__content {
-    width: 49.6rem;
+    max-width: 49.6rem;
+
+    @include for-tablet-portrait-down {
+      width: 33.6rem;
+    }
   }
 
   &__display-text {

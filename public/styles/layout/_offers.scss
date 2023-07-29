@@ -1,18 +1,25 @@
 .offers-content {
   padding-top: 9.6rem;
   padding-bottom: 9.6rem;
+
+  @include for-tablet-portrait-down {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
 }
 
 .offer {
   flex: 1;
-  background-size: cover;
   border-radius: 3.2rem;
-  background-position: center;
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
   min-width: 36.8rem;
+
+  @include for-phone-only {
+    min-width: 30rem;
+  }
 
   &--1 {
     $color-shadow: rgba(246, 100, 139, 0.6);
@@ -28,7 +35,11 @@
 
   &__content {
     width: 26rem;
-    margin: 10.8rem 5.6rem;
+    margin: 10.8rem 5.5rem;
+
+    @include for-tablet-portrait-down {
+      margin: 9.3rem 5.5rem;
+    }
   }
 
   &__img {
@@ -39,5 +50,9 @@
     position: absolute;
     object-fit: cover;
     z-index: -1;
+    object-position: left;
+
+    @include for-tablet-portrait-down {
+    }
   }
 }

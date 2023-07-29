@@ -1,3 +1,9 @@
+@mixin for-desktop-small-down {
+  @media only screen and (max-width: 75em) {
+    @content;
+  }
+}
+
 @mixin for-mobile-down {
   @media only screen and (max-width: 64em) {
     @content;
