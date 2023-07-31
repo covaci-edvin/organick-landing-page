@@ -14,7 +14,6 @@ function closeMenu() {
   menu.classList.remove("open-menu");
   openIcon.classList.add("show-icon");
   closeIcon.classList.remove("show-icon");
-  console.log("scroll");
   window.removeEventListener("scroll", closeMenu);
 }
 

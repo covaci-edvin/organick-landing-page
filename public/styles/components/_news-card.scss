@@ -16,14 +16,19 @@
     min-width: 30rem;
   }
 
+  &__img-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    z-index: -1;
+  }
+
   &__img {
     border-radius: 3.2rem;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     object-fit: cover;
-    z-index: -1;
   }
 
   &__date {
