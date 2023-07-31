@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/svgs/organick.svg" />
     <link rel="stylesheet" href="/fonts/fonts.css" />
     <link rel="stylesheet" href="/public/styles/main.scss" />
+    <script defer type="module" src="./main.js"></script>
 
     <link rel="preload" type="image/svg+xml" href="/svgs/logo.svg" as="image" />
 
@@ -150,14 +151,14 @@
           <picture class="about__img-container">
             <source
               srcset="
-                /images/about-small-1x.png 1x,
-                /images/about-small-2x.png 2x
+                /images/about-small-1x.webp 1x,
+                /images/about-small-2x.webp 2x
               "
               media="(max-width: 56.25em)"
               class="about__img"
             />
             <img
-              srcset="/images/about-1x.png 1x, /images/about-2x.png 2x"
+              srcset="/images/about-1x.webp 1x, /images/about-2x.webp 2x"
               alt="fresh citrus fruits"
               loading="lazy"
               class="about__img"
@@ -215,7 +216,7 @@
           </div>
         </div>
       </section>
-      <section class="products-section section-padding">
+      <section id="shop" class="products-section section-padding">
         <div class="products__content section-content">
           <p class="display-text products__display-text">Organic</p>
           <h2 class="heading-2 products__heading">Our Products</h2>
@@ -928,6 +929,5 @@
       </div>
       <div class="body-text-1 footer__copyright">Copyright &copy; Organick</div>
     </footer>
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
