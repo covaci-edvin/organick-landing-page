@@ -3,6 +3,7 @@ const openIcon = document.querySelector(".open-icon");
 const closeIcon = document.querySelector(".close-icon");
 const hamburger = document.querySelector(".hamburger");
 const header = document.querySelector(".header");
+const menuLinks = document.querySelectorAll(".menu__link");
 
 function setMenuHeightAndPosition() {
   const headerHeight = header.getBoundingClientRect().bottom;
@@ -14,8 +15,7 @@ function closeMenu() {
   menu.classList.remove("open-menu");
   openIcon.classList.add("show-icon");
   closeIcon.classList.remove("show-icon");
-  console.log("scroll");
-  window.removeEventListener("scroll", closeMenu);
+  document.body.classList.remove("lock-scroll");
 }
 
 function toggleMenu() {
@@ -23,12 +23,7 @@ function toggleMenu() {
   menu.classList.toggle("open-menu");
   openIcon.classList.toggle("show-icon");
   closeIcon.classList.toggle("show-icon");
-
-  if (menu.classList.contains("open-menu")) {
-    window.addEventListener("scroll", closeMenu);
-  } else {
-    closeMenu();
-  }
+  document.body.classList.toggle("lock-scroll");
 }
 
 function checkScreenWidth() {
@@ -41,5 +36,7 @@ function checkScreenWidth() {
 }
 
 checkScreenWidth();
+console.log(menuLinks);
 hamburger.addEventListener("click", toggleMenu);
+menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
 window.addEventListener("resize", checkScreenWidth);

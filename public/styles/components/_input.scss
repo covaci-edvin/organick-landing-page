@@ -3,13 +3,18 @@
   color: $color-grey-dark-2;
   padding: 2.4rem 4.8rem;
   border: none;
-  width: 40.7rem;
+  max-width: 40.7rem;
+  width: 100%;
   border-radius: 1.6rem;
   transition: outline 0.2s;
   line-height: 3.2rem;
 
   @include for-tablet-portrait-down {
     width: 100%;
+  }
+
+  @include for-md-phone-down {
+    padding: 2.4rem 2.4rem;
   }
 
   &:focus {
