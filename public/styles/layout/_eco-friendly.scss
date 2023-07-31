@@ -15,9 +15,12 @@
     color: $color-primary;
   }
 
-  &__img {
+  &__img-container {
     max-height: 71.2rem;
-    max-width: 100%;
+    width: 100%;
+  }
+
+  &__img {
     object-fit: cover;
 
     @include for-mobile-down {

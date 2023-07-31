@@ -14,15 +14,22 @@
     <link
       rel="preload"
       as="image"
+      imagesrcset="/images/hero-bg-smallest-1x.webp 1x, /images/hero-bg-smallest-2x.webp 2x"
+      media="(max-width: 400px)"
+    />
+
+    <link
+      rel="preload"
+      as="image"
       imagesrcset="/images/hero-bg-small-1x.webp 1x, /images/hero-bg-small-2x.webp 2x"
-      media="(max-width: 768px)"
+      media="(min-width: 401px)"
     />
 
     <link
       rel="preload"
       as="image"
       imagesrcset="/images/hero-bg-1x.webp 1x, /images/hero-bg-2x.webp 2x"
-      media="(min-width: 767px)"
+      media="(min-width: 769px)"
     />
 
     <title>Organick</title>
@@ -91,10 +98,18 @@
         <picture class="hero__bg-img-container">
           <source
             srcset="
+              /images/hero-bg-smallest-1x.webp 1x,
+              /images/hero-bg-smallest-2x.webp 2x
+            "
+            media="(max-width: 400px)"
+            class="hero__bg-img"
+          />
+          <source
+            srcset="
               /images/hero-bg-small-1x.webp 1x,
               /images/hero-bg-small-2x.webp 2x
             "
-            media="(max-width: 48em)"
+            media="(min-width: 401px)"
             class="hero__bg-img"
           />
           <img
@@ -125,24 +140,46 @@
               <p class="display-text offer__display-text">Natural!!</p>
               <h3 class="heading-3 offer__heading">Get Garden Fresh Fruits</h3>
             </div>
-            <img
-              srcset="/images/offer-1-1x.webp 1x, /images/offer-1-2x.webp 2x"
-              alt="offer one"
-              class="offer__img"
-              loading="lazy"
-            />
+            <picture class="offer__img-container">
+              <source
+                srcset="
+                  /images/offer-1-small-1x.webp 1x,
+                  /images/offer-1-small-2x.webp 2x
+                "
+                alt="offer one"
+                class="offer__img"
+                media="(max-width: 400px)"
+              />
+              <img
+                srcset="/images/offer-1-1x.webp 1x, /images/offer-1-2x.webp 2x"
+                alt="offer one"
+                class="offer__img"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="offer offer--2">
             <div class="offer__content">
               <p class="display-text">Offer!!</p>
               <h3 class="heading-3">Get 10% off on Vegetables</h3>
             </div>
-            <img
-              srcset="/images/offer-2-1x.webp 1x, /images/offer-2-2x.webp 2x"
-              alt="offer two"
-              class="offer__img"
-              loading="lazy"
-            />
+            <picture class="offer__img-container">
+              <source
+                srcset="
+                  /images/offer-2-small-1x.webp 1x,
+                  /images/offer-2-small-2x.webp 2x
+                "
+                alt="offer one"
+                class="offer__img"
+                media="(max-width: 400px)"
+              />
+              <img
+                srcset="/images/offer-2-1x.webp 1x, /images/offer-2-2x.webp 2x"
+                alt="offer one"
+                class="offer__img"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -616,15 +653,25 @@
       </section>
       <section class="eco-friendly-section">
         <div class="eco-friendly__content section-content">
-          <img
-            srcset="
-              /images/eco-friendly-1x.webp 1x,
-              /images/eco-friendly-2x.webp 2x
-            "
-            alt="natural field"
-            class="eco-friendly__img"
-            loading="lazy"
-          />
+          <picture class="eco-friendly__img-container">
+            <source
+              srcset="
+                /images/eco-friendly-small-1x.webp 1x,
+                /images/eco-friendly-small-2x.webp 2x
+              "
+              media="(max-width: 400px)"
+              class="eco-friendly__img"
+            />
+            <img
+              srcset="
+                /images/eco-friendly-1x.webp 1x,
+                /images/eco-friendly-2x.webp 2x
+              "
+              alt="natural field"
+              class="eco-friendly__img"
+              loading="lazy"
+            />
+          </picture>
           <div class="eco-friendly__card">
             <p class="display-text eco-friendly__display-text">Eco friendly</p>
             <h2 class="heading-2">From our Farm to your Home</h2>
@@ -726,12 +773,26 @@
           </div>
           <div class="responsive-1d-layout">
             <div class="news-card">
-              <img
-                srcset="/images/news-1-1x.webp 1x, /images/news-1-2x.webp 2x"
-                alt="green salad"
-                class="news-card__img"
-                loading="lazy"
-              />
+              <picture class="news-card__img-container">
+                <source
+                  srcset="
+                    /images/news-1-small-1x.webp       1x,
+                    /images/news-1-small-2x.webp 2x
+                  "
+                  alt="green salad"
+                  class="news-card__img"
+                  media="(max-width: 400px)"
+                />
+                <img
+                  srcset="
+                    /images/news-1-1x.webp       1x,
+                    /images/news-1-2x.webp 2x
+                  "
+                  alt="green salad"
+                  class="news-card__img"
+                  loading="lazy"
+                />
+              </picture>
               <div class="news-card__date">
                 <h4 class="heading-4">14</h4>
                 <p class="label-text">Feb</p>
@@ -761,12 +822,23 @@
               </div>
             </div>
             <div class="news-card">
-              <img
-                srcset="/images/news-2-1x.webp 1x, /images/news-2-2x.webp 2x"
-                alt="green salad"
-                class="news-card__img"
-                loading="lazy"
-              />
+              <picture class="news-card__img-container">
+                <source
+                  srcset="
+                    /images/news-2-small-1x.webp 1x,
+                    /images/news-2-small-2x.webp 2x
+                  "
+                  alt="green salad"
+                  class="news-card__img"
+                  media="(max-width: 400px)"
+                />
+                <img
+                  srcset="/images/news-2-1x.webp 1x, /images/news-2-2x.webp 2x"
+                  alt="green salad"
+                  class="news-card__img"
+                  loading="lazy"
+                />
+              </picture>
               <div class="news-card__date">
                 <h4 class="heading-4">24</h4>
                 <p class="label-text">Sep</p>
