@@ -8,12 +8,27 @@
   }
 }
 
+.section-padding {
+  padding-bottom: 9.6rem;
+  padding-top: 9.6rem;
+
+  @include for-tablet-portrait-down {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+}
+
 .responsive-2d-layout {
   display: grid;
   width: 100%;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 43.2rem);
   gap: 3.2rem;
+
+  @include for-tablet-portrait-down {
+    gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 36.8rem));
+  }
 }
 
 .responsive-1d-layout {

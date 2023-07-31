@@ -2,13 +2,18 @@
   position: relative;
   margin: 0 auto;
   min-width: 36.8rem;
+
   flex: 1;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
 
+  @include for-mobile-down {
+    max-width: 61.2rem;
+  }
   @include for-phone-only {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+    min-width: 30rem;
   }
 
   &__img {
@@ -45,7 +50,7 @@
     box-shadow: $shadow;
 
     @include for-phone-only {
-      margin: 0 1.6rem;
+      margin-top: 18rem;
       padding: 2.4rem 1.6rem;
     }
 

@@ -15,7 +15,7 @@
     max-width: 20%;
     object-fit: cover;
 
-    @include for-mobile-down {
+    @include for-tablet-landscape-down {
       display: none;
     }
   }
@@ -31,7 +31,7 @@
   text-align: center;
 
   @include for-mobile-down {
-    margin: 6.4rem 1.6rem;
+    margin: 6.4rem 0;
   }
 
   &__display-text {

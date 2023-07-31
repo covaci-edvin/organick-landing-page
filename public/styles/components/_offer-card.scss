@@ -1,9 +1,12 @@
 .offer-card {
-  width: 43.2rem;
   height: 58.4rem;
   border-radius: 2.4rem;
   overflow: hidden;
   position: relative;
+
+  @include for-tablet-portrait-down {
+    height: 50.4rem;
+  }
 
   &__img {
     position: absolute;
