@@ -16,6 +16,12 @@
   }
 }
 
+@mixin for-md-phone-down {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
 @mixin for-tablet-portrait-down {
   @media only screen and (max-width: 48em) {
     @content;
