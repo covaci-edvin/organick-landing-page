@@ -1,8 +1,5 @@
 .footer {
   &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: $color-body;
     margin-bottom: 4.9rem;
 
@@ -22,6 +19,17 @@
 
   &__main {
     display: flex;
+    justify-content: space-between;
+
+    @include for-mobile-down {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include for-md-phone-down {
+      grid-template-columns: 1fr;
+      gap: 6.4rem;
+    }
   }
 
   &__contact-us,
@@ -31,11 +39,32 @@
     gap: 4.8rem;
     padding-top: 0.8rem;
     width: 31.6rem;
+
+    @include for-mobile-down {
+      width: 100%;
+    }
+
+    @include for-md-phone-down {
+      gap: 2.4rem;
+    }
   }
 
   &__contact-us {
     align-items: flex-end;
     padding-right: 1.6rem;
+
+    @include for-mobile-down {
+      justify-self: end;
+      border-right: 1px solid $color-grey-light-3;
+      padding-right: 4rem;
+    }
+
+    @include for-md-phone-down {
+      justify-self: start;
+      align-items: flex-start;
+      padding-right: 0;
+      border: none;
+    }
   }
 
   &__info {
@@ -46,8 +75,16 @@
     padding: 3.3rem 4.9rem 6.4rem 4.9rem;
     border-left: 1px solid $color-grey-light-3;
     border-right: 1px solid $color-grey-light-3;
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
+
+    @include for-mobile-down {
+      grid-area: 1/1/2/3;
+      border: none;
+    }
+
+    @include for-md-phone-down {
+      grid-area: 1/1/2/2;
+      padding: 0;
+    }
   }
 
   &__info-about {
@@ -59,6 +96,15 @@
   &__utility-pages {
     align-items: flex-start;
     padding-left: 1.6rem;
+
+    @include for-mobile-down {
+      justify-self: start;
+      padding-left: 4rem;
+    }
+
+    @include for-md-phone-down {
+      padding-left: 0;
+    }
   }
 
   &__copyright {
@@ -89,6 +135,11 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: end;
+
+    @include for-md-phone-down {
+      align-items: flex-start;
+      text-align: start;
+    }
   }
 }
 
