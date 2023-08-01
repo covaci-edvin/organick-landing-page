@@ -21,6 +21,10 @@
     min-width: 30rem;
   }
 
+  &__display-text {
+    color: currentColor;
+  }
+
   &--1 {
     $color-shadow: rgba(246, 100, 139, 0.6);
     color: $color-white;
