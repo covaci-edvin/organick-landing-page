@@ -22,7 +22,7 @@
       rel="preload"
       as="image"
       imagesrcset="/images/hero-bg-small-1x.webp 1x, /images/hero-bg-small-2x.webp 2x"
-      media="(min-width: 401px)"
+      media="only screen and (min-width: 401px) and (max-width: 768px)"
     />
 
     <link
@@ -109,7 +109,7 @@
               /images/hero-bg-small-1x.webp 1x,
               /images/hero-bg-small-2x.webp 2x
             "
-            media="(min-width: 401px)"
+            media="(max-width: 768px)"
             class="hero__bg-img"
           />
           <img
@@ -171,7 +171,7 @@
                 "
                 alt="offer one"
                 class="offer__img"
-                media="(max-width: 400px)"
+                media="(max-width: 25em)"
               />
               <img
                 srcset="/images/offer-2-1x.webp 1x, /images/offer-2-2x.webp 2x"
@@ -776,7 +776,7 @@
               <picture class="news-card__img-container">
                 <source
                   srcset="
-                    /images/news-1-small-1x.webp       1x,
+                    /images/news-1-small-1x.webp 1x,
                     /images/news-1-small-2x.webp 2x
                   "
                   alt="green salad"
@@ -784,10 +784,7 @@
                   media="(max-width: 400px)"
                 />
                 <img
-                  srcset="
-                    /images/news-1-1x.webp       1x,
-                    /images/news-1-2x.webp 2x
-                  "
+                  srcset="/images/news-1-1x.webp 1x, /images/news-1-2x.webp 2x"
                   alt="green salad"
                   class="news-card__img"
                   loading="lazy"
