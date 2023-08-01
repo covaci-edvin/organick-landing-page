@@ -34,11 +34,7 @@
   @include for-mobile-down {
     margin: 6.4rem 0;
   }
-
-  &__display-text {
-    color: $color-primary;
-  }
-
+  
   &__heading {
     color: $color-body;
   }
