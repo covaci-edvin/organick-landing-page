@@ -44,38 +44,52 @@
           <div class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
+                <a href="#" class="menu__link" aria-label="home page">Home</a>
               </li>
               <li class="menu__item">
-                <a href="#about-us" class="menu__link">About us</a>
+                <a
+                  href="#about-us"
+                  class="menu__link"
+                  aria-label="about us section"
+                  >About us</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#shop" class="menu__link">Shop</a>
+                <a
+                  href="#shop"
+                  class="menu__link"
+                  aria-label="shop products section"
+                  >Shop</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Pages</a>
+                <a href="#" class="menu__link" aria-label="utility pages"
+                  >Pages</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#contact-us" class="menu__link">Contact us</a>
+                <a href="#contact-us" class="menu__link" aria-label="contact us"
+                  >Contact us</a
+                >
               </li>
             </ul>
             <div class="socials">
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our facebook page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#facebook" />
                 </svg>
               </a>
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our twitter page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#twitter" />
                 </svg>
               </a>
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our instagram page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#instagram" />
                 </svg>
               </a>
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our pinterest page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#pinterest" />
                 </svg>
@@ -124,7 +138,11 @@
             <h1 class="heading-1 hero__heading">
               Welcome to the world of nature and organic.
             </h1>
-            <a href="#" class="btn btn--primary hero__btn">
+            <a
+              href="#"
+              class="btn btn--primary hero__btn"
+              aria-label="Explore more"
+            >
               <span class="btn__text">Explore now</span>
               <svg class="btn__icon">
                 <use xlink:href="/svgs/sprite.svg#Arrow" />
@@ -244,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn btn--secondary">
+            <a href="#" class="btn btn--secondary" aria-label="Shop now">
               <span class="btn__text">Shop now</span>
               <svg class="btn__icon">
                 <use xlink:href="../svgs/sprite.svg#Arrow" />
@@ -538,7 +556,7 @@
                 We Offer Organic for You
               </h2>
             </div>
-            <a href="#" class="btn btn--primary">
+            <a href="#" class="btn btn--primary" aria-label="Explore now">
               <span class="btn__text">Explore now</span>
               <svg class="btn__icon">
                 <use xlink:href="../svgs/sprite.svg#Arrow" />
@@ -764,7 +782,7 @@
               <p class="display-text news__display-text">News</p>
               <h2 class="heading-2">Discover content about organic products</h2>
             </div>
-            <a href="#" class="btn btn--outline">
+            <a href="#" class="btn btn--outline" aria-label="See more news">
               <span class="btn__text">More News</span>
               <svg class="btn__icon">
                 <use xlink:href="/svgs/sprite.svg#Arrow" />
@@ -776,7 +794,7 @@
               <picture class="news-card__img-container">
                 <source
                   srcset="
-                    /images/news-1-small-1x.webp       1x,
+                    /images/news-1-small-1x.webp 1x,
                     /images/news-1-small-2x.webp 2x
                   "
                   alt="green salad"
@@ -784,10 +802,7 @@
                   media="(max-width: 400px)"
                 />
                 <img
-                  srcset="
-                    /images/news-1-1x.webp       1x,
-                    /images/news-1-2x.webp 2x
-                  "
+                  srcset="/images/news-1-1x.webp 1x, /images/news-1-2x.webp 2x"
                   alt="green salad"
                   class="news-card__img"
                   loading="lazy"
@@ -813,7 +828,11 @@
                   Organic farming is the only way that you still can experience
                   the real world.
                 </p>
-                <a href="#" class="btn btn--link">
+                <a
+                  href="#"
+                  class="btn btn--link"
+                  aria-label="Read more on Everything You Need to Know About Organic"
+                >
                   <span class="btn__text">View More</span>
                   <svg class="btn__icon">
                     <use xlink:href="./svgs/sprite.svg#Arrow" />
@@ -857,7 +876,11 @@
                   The world of nature has grown on the principles of health,
                   ecology, and care.
                 </p>
-                <a href="#" class="btn btn--link">
+                <a
+                  href="#"
+                  class="btn btn--link"
+                  aria-label="Read more on Organic Fruits: Surprising Benefits and Facts"
+                >
                   <span class="btn__text">View More</span>
                   <svg class="btn__icon">
                     <use xlink:href="./svgs/sprite.svg#Arrow" />
@@ -902,7 +925,11 @@
                   required
                   placeholder="Enter your email address"
                 />
-                <a href="#" class="btn btn--secondary">
+                <a
+                  href="#"
+                  class="btn btn--secondary"
+                  aria-label="Subscribe to our newsletter now"
+                >
                   <span class="btn__text">Subscribe</span>
                   <svg class="btn__icon">
                     <use xlink:href="/svgs/sprite.svg#Arrow" />
@@ -923,7 +950,9 @@
               <li class="contact__item">
                 <span class="body-text-bold contact__item-name">Email</span>
                 <span class="body-text-1 contact__item-content"
-                  ><a href="mailto:needhelp@organick.com"
+                  ><a
+                    href="mailto:needhelp@organick.com"
+                    aria-label="Write us an email"
                     >needhelp@organick.com</a
                   ></span
                 >
@@ -931,7 +960,9 @@
               <li class="contact__item">
                 <span class="body-text-bold contact__item-name">Phone</span>
                 <span class="body-text-1 contact__item-content"
-                  ><a href="tel:123 (1254) 1452">123 (1254) 1452</a></span
+                  ><a href="tel:123 (1254) 1452" aria-label="Call us"
+                    >123 (1254) 1452</a
+                  ></span
                 >
               </li>
               <li class="contact__item">
@@ -955,22 +986,22 @@
               the Organic food industry.
             </p>
             <div class="socials">
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our facebook page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#facebook" />
                 </svg>
               </a>
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our twitter page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#twitter" />
                 </svg>
               </a>
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our instagram page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#instagram" />
                 </svg>
               </a>
-              <a href="#" class="social">
+              <a href="#" class="social" aria-label="visit our pinterest page">
                 <svg class="social__icon">
                   <use xlink:href="/svgs/sprite.svg#pinterest" />
                 </svg>
@@ -981,19 +1012,41 @@
             <h4 class="heading-4">Utility Pages</h4>
             <ul class="utility-pages__list">
               <li class="utility-pages__item">
-                <a href="#" class="body-text-1">Style Guide</a>
+                <a
+                  href="#"
+                  class="body-text-1"
+                  aria-label="visit Style Guide page"
+                  >Style Guide</a
+                >
               </li>
               <li class="utility-pages__item">
-                <a href="#" class="body-text-1">Protected</a>
+                <a
+                  href="#"
+                  class="body-text-1"
+                  aria-label="visit Protected page"
+                  >Protected</a
+                >
               </li>
               <li class="utility-pages__item">
-                <a href="#" class="body-text-1">Page Not Found</a>
+                <a
+                  href="#"
+                  class="body-text-1"
+                  aria-label="visit Page Not Found page"
+                  >Page Not Found</a
+                >
               </li>
               <li class="utility-pages__item">
-                <a href="#" class="body-text-1">Changelog</a>
+                <a
+                  href="#"
+                  class="body-text-1"
+                  aria-label="visit Changelog page"
+                  >Changelog</a
+                >
               </li>
               <li class="utility-pages__item">
-                <a href="#" class="body-text-1">Licenses</a>
+                <a href="#" class="body-text-1" aria-label="visit Licenses page"
+                  >Licenses</a
+                >
               </li>
             </ul>
           </div>
