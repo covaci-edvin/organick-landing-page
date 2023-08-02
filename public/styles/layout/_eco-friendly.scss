@@ -14,15 +14,15 @@
   &__img-container {
     max-height: 71.2rem;
     width: 100%;
+    overflow: hidden;
   }
 
   &__img {
-    object-fit: cover;
+    display: block;
 
     @include for-mobile-down {
       padding-right: 0;
       width: 100%;
-      flex-direction: column;
     }
   }
 
