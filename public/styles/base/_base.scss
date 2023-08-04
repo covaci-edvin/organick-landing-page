@@ -14,7 +14,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scrollbar-gutter: stable;
 }
 
 body {
@@ -23,4 +22,5 @@ body {
   letter-spacing: 0.36px;
   line-height: 3.2rem;
   background-color: $color-white;
+  scrollbar-gutter: stable;
 }
