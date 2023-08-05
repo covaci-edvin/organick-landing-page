@@ -22,15 +22,12 @@
   display: grid;
   width: 100%;
   justify-content: center;
+  grid-template-columns: repeat(auto-fit, 43.2rem);
   gap: 3.2rem;
 
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-
-  @include for-mobile-down {
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  }
   @include for-tablet-portrait-down {
     gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 36.8rem));
   }
 }
 
