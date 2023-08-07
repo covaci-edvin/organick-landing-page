@@ -31,15 +31,19 @@
 
   &__content {
     max-width: 49.6rem;
-    max-height: 43.2rem;
 
     @include for-tablet-portrait-down {
       max-width: 33.6rem;
     }
   }
-  
+
   &__heading {
     color: $color-body;
+    max-height: 25.2rem;
+
+    @include for-mobile-down {
+      max-height: unset;
+    }
   }
 
   &__btn {
