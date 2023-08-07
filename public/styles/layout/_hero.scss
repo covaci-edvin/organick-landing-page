@@ -31,6 +31,7 @@
 
   &__content {
     max-width: 49.6rem;
+    max-height: 43.2rem;
 
     @include for-tablet-portrait-down {
       max-width: 33.6rem;

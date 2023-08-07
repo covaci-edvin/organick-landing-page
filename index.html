@@ -11,27 +11,25 @@
     <link rel="icon" type="image/svg+xml" href="/svgs/organick.svg" />
 
     <link rel="preload" type="image/svg+xml" href="/svgs/logo.svg" as="image" />
-
     <link
       rel="preload"
       as="image"
       imagesrcset="/images/hero-bg-smallest-1x.webp 1x, /images/hero-bg-smallest-2x.webp 2x"
       media="(max-width: 400px)"
     />
-
     <link
       rel="preload"
       as="image"
       imagesrcset="/images/hero-bg-small-1x.webp 1x, /images/hero-bg-small-2x.webp 2x"
       media="only screen and (min-width: 401px) and (max-width: 768px)"
     />
-
     <link
       rel="preload"
       as="image"
       imagesrcset="/images/hero-bg-1x.webp 1x, /images/hero-bg-2x.webp 2x"
       media="(min-width: 769px)"
     />
+
     <link
       rel="preload"
       href="/public/fonts/roboto_bold.woff2"
@@ -55,7 +53,11 @@
     />
 
     <link rel="stylesheet" href="/public/styles/main.scss" />
-    <script type="module" src="./main.js"></script>
+    <!-- <style>
+      @import url("/public/styles/main.scss");
+    </style> -->
+
+    <script defer src="./main.js"></script>
     <title>Organick</title>
   </head>
   <body>

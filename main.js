@@ -41,5 +41,5 @@ function toggleMenu() {
 
 checkScreenWidth();
 hamburger.addEventListener("click", toggleMenu);
-menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
+menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
 window.addEventListener("resize", checkScreenWidth);
